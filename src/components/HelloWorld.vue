@@ -99,6 +99,8 @@
         >
       </li>
     </ul>
+    <input id="password-field" type="password" class="form-control" name="password" value="secret"/>
+    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"/>
   </div>
 </template>
 
@@ -107,7 +109,22 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  mounted()
+  {
+    // console.log($);
+//     $(".toggle-password").click(function() {
+//   $(this).toggleClass("fa-eye fa-eye-slash");
+//   var input = $($(this).attr("toggle"));  
+// if (input.attr("type") == "password") {
+// input.attr("type", "text");
+// } else {
+// input.attr("type", "password");
+// }
+// });  
   }
+
+  
 };
 </script>
 
